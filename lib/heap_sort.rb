@@ -5,7 +5,6 @@ class Array
     array = self.dup
     (self.length).times do |i|
     BinaryMinHeap.heapify_up(array, array.length - i, array.length)
-    BinaryMinHeap.heapify_down(array, 0, i)
     end 
     heap = BinaryMinHeap.new(array)
     (self.length).times do
